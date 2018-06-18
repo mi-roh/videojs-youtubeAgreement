@@ -1,0 +1,123 @@
+/**
+ * Styles for the VideoJS Plugin with User Agreement for Youtube Videos
+ *
+ * Created by Micha Rohde on 11.06.18.
+ *
+ * @licence MIT
+ *
+ * SDG
+ */
+
+$vjs-youtubeAgreement-disagree-size: 3em !default;
+
+.vjs-plugin-no-youtubeAgreement {
+
+  overflow: hidden;
+
+  // Actual Message
+  .vjs-plugin-youtubeAgreement {
+    position: absolute;
+    box-sizing: border-box;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 1em;
+    line-height: 1.5;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 0 0.5em;
+    justify-content: center;
+    background: rgba( 0, 0, 0, 0.3 );
+    color: #ffffff;
+    z-index: 1;
+
+    > div {
+      max-width: 70%;
+    }
+
+    .agreementText {
+      display: block;
+      font-size: 2em;
+      margin: 0 0 1em;
+    }
+
+    .agreement {
+      background: rgba( 255,255,255,0.3 );
+      font-size: 1.6em;
+
+      &:hover {
+        background: rgba( 255,255,255,0.6 );
+      }
+    }
+
+    .privacyText {
+      display: block;
+      margin: 1em 0 0;
+      font-size: 1.5em;
+    }
+
+    a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
+  }
+
+
+  // Blur Content
+  %vjs-youtubeAgreement-disabled-blur,
+  .vjs-poster,
+  .vjs-control-bar,
+  .vjs-plugin-addTitle {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -o-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+  }
+
+  // Hide content
+  %vjs-youtubeAgreement-disabled-hide,
+  .vjs-plugin-disableVideoClick,
+  .vjs-big-play-button,
+  .vjs-error-display,
+  .vjs-text-track-settings {
+    display: none;
+  }
+
+
+}
+
+.vjs-plugin-has-youtubeAgreement {
+
+  // Actual Message
+  .vjs-plugin-youtubeAgreement {
+
+    button {
+
+      box-sizing: border-box;
+      position: absolute;
+      left: 0;
+      top: -#{ $vjs-youtubeAgreement-disagree-size };
+
+      width: $vjs-youtubeAgreement-disagree-size;
+      height: $vjs-youtubeAgreement-disagree-size;
+      overflow: hidden;
+      z-index: 1;
+      padding: 0;
+
+      &:before {
+        display: block;
+        width: 100%;
+        height: 100%;
+        content: '×'; // &times;
+        font-size: $vjs-youtubeAgreement-disagree-size;
+        line-height: 1em;
+        text-align: center;
+      }
+
+    }
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "name": "videojs-youtubeAgreement",
+  "description": "User Agreement for Youtube Videos within video.js",
+  "version": "0.0.1",
+  "author": {
+    "name": "Micha Rohde",
+    "email": "hi@mi-roh.de"
+  },
+  "main": "dist/videojs-youtubeAgreement.js",
+  "style": "src/videojs-youtubeAgreement.scss",
+  "license": "MIT",
+  "keywords": [
+    "video",
+    "videojs",
+    "video.js",
+    "vjs",
+    "YouTube",
+    "GDPR",
+    "DS-GVO",
+    "DSGVO",
+    "RGPD",
+    "tech"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mi-roh/videojs-youtubeAgreement.git"
+  },
+  "peerDependencies": {
+    "video.js": "5.x || 6.x || 7.x",
+    "videojs-youtube": "2.x"
+  },
+  "dependencies": {
+    "video.js": "^5.6.0 || ^6.2.8 || ^7.0.2",
+    "videojs-youtube": "^2.0.8",
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.3",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-banner": "^0.6.0",
+    "grunt-contrib-clean": "^1.1.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-uglify": "^3.3.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-jscs": "^3.0.1"
+  }
+}
