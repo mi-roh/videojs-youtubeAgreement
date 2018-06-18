@@ -7,7 +7,7 @@
     "email": "hi@mi-roh.de"
   },
   "main": "dist/videojs-youtubeAgreement.js",
-  "style": "src/videojs-youtubeAgreement.scss",
+  "style": "src/_videojs-youtubeAgreement.scss",
   "license": "MIT",
   "keywords": [
     "video",
